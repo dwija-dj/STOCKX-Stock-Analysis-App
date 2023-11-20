@@ -96,7 +96,7 @@ elif menu == 'Prediction Page':
     st.subheader("Prediction Page")
             
     st.set_option('deprecation.showPyplotGlobalUse', False)
-    all_stock = pd.read_csv(r"stock.csv")
+    all_stock = pd.read_csv(r"STOCK/stock.csv")
     stock_name = all_stock["Company Name"].tolist()
     st.subheader("Select a stock")
     user_stock = st.selectbox("Stock names", stock_name)
