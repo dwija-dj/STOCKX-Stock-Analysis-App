@@ -13,7 +13,7 @@ st.title('STOCKx Stock Analysis App')
 #     st.session_state.selected_stock = None
 
 # Create a sidebar for navigation
-menu = st.sidebar.selectbox('Menu', ['Welcome', 'Data Page', 'Visualization Page', 'Prediction Page', 'App Benefits and Conclusion','Team Members'])
+menu = st.sidebar.selectbox('Menu', ['Welcome', 'Data Page', 'Visualization Page', 'Prediction Page', 'App Benefits and Conclusion'])
 
 if menu == 'Welcome':
     st.subheader('How the Stock Prediction Model Works')
@@ -123,9 +123,4 @@ elif menu == 'App Benefits and Conclusion':
     st.subheader("App Benefits and Conclusion")
     st.write("In conclusion, our Stock Analysis Hub app equips users with the essential tools and information to navigate the complex world of stock investments. By allowing users to explore historical stock data, the app provides a wealth of knowledge on how specific companies have fared over the years. It offers insights into trends, price fluctuations, and other key historical metrics, enabling users to make more informed decisions.Users can visualize the stock data through various charts, including the Closing Price vs Time chart, which provides a visual representation of the stock's price movements over time. This helps users quickly identify patterns.")
 
-elif menu == 'Team Members':
-     st.subheader("Team Members:")
-     st.write("Dwijavanthi J-(RA2211056010068)")
-     st.write("Pavithra GV-(RA2211056010046)")
-     st.write("Susmitha V-(RA2211056010038)")
      
