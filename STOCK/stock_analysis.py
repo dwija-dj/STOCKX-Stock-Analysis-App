@@ -78,5 +78,5 @@ def get_latest_price(user_input):
     df = pdr.get_data_yahoo(user_input)
     return df['Close'].iloc[-1]
 
-model = tf.keras.models.load_model('STOCK/keras_model.h5')
+model = tf.keras.models.load_model(r'STOCK/keras_model.h5')
 scaler = MinMaxScaler(feature_range=(0, 1))
