@@ -62,7 +62,7 @@ elif menu == 'Visualization Page':
     st.subheader("Visualization Page")
             
     st.set_option('deprecation.showPyplotGlobalUse', False)
-    all_stock = pd.read_csv(r"stock.csv")
+    all_stock = pd.read_csv(r"STOCK/stock.csv")
     stock_name = all_stock["Company Name"].tolist()
     st.subheader("Select a stock")
     user_stock = st.selectbox("Stock names", stock_name)
@@ -105,7 +105,7 @@ elif menu == 'Prediction Page':
     user_input = all_stock[all_stock["Company Name"] == user_stock]["Symbol"].values[0]
     df = load_stock_data(user_input)
     # Load your model and scaler here
-    model = tf.keras.models.load_model('keras_model.h5')
+    model = tf.keras.models.load_model(r'STOCK/keras_model.h5')
     scaler = MinMaxScaler(feature_range=(0,1))
 
 # Prepare predictions and get y_test and y_predicted
