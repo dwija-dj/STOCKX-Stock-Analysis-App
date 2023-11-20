@@ -10,3 +10,6 @@ detailed insights into individual stocks and market sectors. Visualizations
 and metrics help users identify key performance indicators, historical
 stock price movements, and comparative analyses, allowing them to
 make educated investment choices.
+
+DEMO:
+https://stockx.streamlit.app/
