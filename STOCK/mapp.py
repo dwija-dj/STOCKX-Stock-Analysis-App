@@ -38,7 +38,7 @@ elif menu == 'Data Page':
     # Data Page
             
     st.set_option('deprecation.showPyplotGlobalUse', False)
-    all_stock = pd.read_csv(r"stock.csv")
+    all_stock = pd.read_csv(r"STOCK/stock.csv")
     stock_name = all_stock["Company Name"].tolist()
 
     st.subheader("Data Page")
