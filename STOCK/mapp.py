@@ -8,7 +8,7 @@ import pandas as pd
 st.title('STOCKx Stock Analysis App')
 
 # Create a sidebar for navigation
-menu = st.sidebar.radio('Menu', ['Welcome', 'Data Page', 'Visualization Page', 'Prediction Page', 'App Benefits and Conclusion'])
+menu = st.sidebar.selectbox('Menu', ['Welcome', 'Data Page', 'Visualization Page', 'Prediction Page', 'App Benefits and Conclusion'])
 
 # Read stock data
 all_stock = pd.read_csv(r"STOCK/stock.csv")
