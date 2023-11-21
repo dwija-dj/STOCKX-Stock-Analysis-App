@@ -14,9 +14,11 @@ menu = st.sidebar.selectbox('Menu', ['Welcome', 'Data Page', 'Visualization Page
 all_stock = pd.read_csv(r"STOCK/stock.csv")
 stock_name = all_stock["Company Name"].tolist()
 
-# User input for stock ticker in the sidebar
-st.sidebar.subheader("Select a stock")
-user_stock = st.sidebar.selectbox("Stock names", stock_name)
+
+if menu in ['Data Page', 'Visualization Page', 'Prediction Page']:
+    # User input for stock ticker in the sidebar
+    st.sidebar.subheader("Select a stock")
+    user_stock = st.sidebar.selectbox("Stock names", stock_name)
 
 if menu == 'Welcome':
     st.subheader('How the Stock Prediction Model Works')
