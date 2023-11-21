@@ -30,13 +30,13 @@ if menu == 'Welcome':
 
         2. Analyzing and visualizing this data to identify patterns, trends, and moving averages in the stock's performance over time.
 
-        3. Utilizing a pre-trained deep learning model (LSTM), to make predictions about future stock prices based on historical patterns and data.
+        3. Utilizing a pre-trained LTSM Model, to make predictions about future stock prices based on historical patterns and data.
 
         4. Comparing the model's predictions with actual stock prices to evaluate its accuracy and performance.
 
         This model is designed to provide insights into possible future stock price trends, but it's important to note that stock markets are influenced by various factors, and predictions are not guaranteed.
 
-        Enjoy using the Stock Analysis App!
+        Enjoy using the Stockx Analysis App!
     """)
 
 elif menu == 'Data Page':
@@ -110,4 +110,4 @@ elif menu == 'Prediction Page':
 elif menu == 'App Benefits and Conclusion':
     # About Page
     st.subheader("App Benefits and Conclusion")
-    st.write("In conclusion, our Stock Analysis Hub app equips users with the essential tools and information to navigate the complex world of stock investments. By allowing users to explore historical stock data, the app provides a wealth of knowledge on how specific companies have fared over the years. It offers insights into trends, price fluctuations, and other key historical metrics, enabling users to make more informed decisions.Users can visualize the stock data through various charts, including the Closing Price vs Time chart, which provides a visual representation of the stock's price movements over time. This helps users quickly identify patterns.")
+    st.write("In conclusion, our Stockx  app equips users with the essential tools and information to navigate the complex world of stock investments. By allowing users to explore historical stock data, the app provides a wealth of knowledge on how specific companies have fared over the years. It offers insights into trends, price fluctuations, and other key historical metrics, enabling users to make more informed decisions.Users can visualize the stock data through various charts, including the Closing Price vs Time chart, which provides a visual representation of the stock's price movements over time. This helps users quickly identify patterns.")

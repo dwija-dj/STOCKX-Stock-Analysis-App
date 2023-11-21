@@ -21,6 +21,7 @@ def load_stock_data(user_input):
 def plot_stock_data(df):
     fig= plt.figure(figsize=(12, 6))
     plt.plot(df.Close)
+    plt.legend()
     plt.show()
 def plot_stock_data_with_100MA(df):
     
@@ -28,16 +29,21 @@ def plot_stock_data_with_100MA(df):
     fig = plt.figure(figsize=(12, 6))
     plt.plot(ma100)
     plt.plot(df.Close)
+    plt.legend()
     plt.show()
 
 def plot_stock_data_with_100MA_200MA(df):
-    
     ma100 = df.Close.rolling(100).mean()
     ma200 = df.Close.rolling(200).mean()
+    
     fig = plt.figure(figsize=(12, 6))
+    
     plt.plot(ma100, 'r', label="100 MA")
     plt.plot(ma200, 'g', label='200 MA')
     plt.plot(df.Close, 'b', label='Original Price')
+    
+    plt.legend()  # Add legend
+    
     plt.show()
 
 def prepare_predictions(model, scaler, df):
