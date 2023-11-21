@@ -13,7 +13,7 @@ st.title('STOCKx Stock Analysis App')
 #     st.session_state.selected_stock = None
 
 # Create a sidebar for navigation
-menu = st.sidebar.selectbox('Menu', ['Welcome', 'Data Page', 'Visualization Page', 'Prediction Page', 'App Benefits and Conclusion'])
+menu = st.sidebar.radio('Menu', ['Welcome', 'Data Page', 'Visualization Page', 'Prediction Page', 'App Benefits and Conclusion'])
 
 if menu == 'Welcome':
     st.subheader('How the Stock Prediction Model Works')
@@ -25,7 +25,7 @@ if menu == 'Welcome':
 
         2. Analyzing and visualizing this data to identify patterns, trends, and moving averages in the stock's performance over time.
 
-        3. Utilizing a pre-trained machine learning model, such as a Neural Network, to make predictions about future stock prices based on historical patterns and data.
+        3. Utilizing a pre-trained deep learning model(LSTM),  to make predictions about future stock prices based on historical patterns and data.
 
         4. Comparing the model's predictions with actual stock prices to evaluate its accuracy and performance.
 
