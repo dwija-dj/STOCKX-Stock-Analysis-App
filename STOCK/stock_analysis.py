@@ -11,8 +11,12 @@ def load_stock_data(user_input):
     yf.pdr_override() 
     start = "2013-01-01"
     end = "2023-12-31"
-    df=pdr.get_data_yahoo(user_input, start=start, end=end)
-    return df
+    
+    try:
+        df = pdr.get_data_yahoo(user_input, start=start, end=end)
+        return df
+    except Exception as e:
+        return "Not available"
 
 def plot_stock_data(df):
     fig= plt.figure(figsize=(12, 6))
