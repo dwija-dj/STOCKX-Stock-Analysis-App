@@ -77,8 +77,6 @@ elif menu == 'Visualization Page':
 
     # Plot Closing Price vs Time chart with 100MA & 200MA
     st.subheader('Closing Price vs Time chart with 100MA & 200MA')
-    st.write("Red-100MA")
-    st.write("Green-200MA")
     st.write("Closing Price vs Time chart with 100MA & 200MA provides a comprehensive view of a stock's historical price movements by including two moving averages.")
     st.write("When the closing price crosses above both the 100MA and 200MA, it may be a strong bullish signal, suggesting potential price strength. Conversely, if it crosses below both moving averages, it may indicate a strong bearish signal, suggesting potential price weakness.")
     plot_stock_data_with_100MA_200MA(df)
